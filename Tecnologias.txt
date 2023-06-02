@@ -1,0 +1,36 @@
+Programação Orientada a Objetos
+PHP
+Solid
+MVC
+
+Solid
+Orientação a Objetos, pra que te quero?
+A coesão e o tal do SRP?
+Acoplamento e o tal do DIP
+Classes abertas e o tal do OCP
+O encapsulamento e a propagação de mudanças
+Herança x composição e o tal do LSP
+Interfaces magras e o tal do ISP
+Consistência, objetinhos e objetões
+Maus cheiros de design
+Métricas de código
+Exemplo prático: MetricMiner
+Conclusão
+
+
+Capitulo 2 - A coesão e o tal do SRP?
+Uma classe coesa é aquela que possui uma unica responsabilidade
+
+Controllers como coordenadores de processos
+Single Responsibility Principle -> a classe deve ter uma, e apenas uma, razão para mudar
+
+Dois comportamentos “pertencem”
+ao mesmo conceito/ responsabilidade se ambos mudam juntos.
+Escrever código de qualidade é sempre incremental; você modela,
+observa seu modelo, aprende com ele e o melhora.
+
+A regra é simples: se a classe tem algum
+contato com infraestrutura, você não escreve regras de negócio alguma nelas;
+
+se a classe tem regras de negócio, ela não deve conhecer nenhuma infraestru-
+tura.

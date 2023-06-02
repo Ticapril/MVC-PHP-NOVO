@@ -1,0 +1,15 @@
+/* centraliza conteúdo */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* alinha em coluna  */
+.column {
+  flex-direction: column;
+}
+.image {
+  width: 140px;
+  height: auto;
+}
