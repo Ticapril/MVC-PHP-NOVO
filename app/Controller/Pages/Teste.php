@@ -9,24 +9,20 @@ namespace App\Controller\Pages;
 use \App\Utils\View;
 use \App\Models\Entity\Organization;
 
-class Home extends Page {
+class Teste extends Page {
    
     /**
      * Método responsável por retornar o conteúdo (view) da nossa home
      * @return string
      */
-    public static function getHome(){
+    public static function getTeste(){
         $objOrganization = new Organization();
-        // echo '<pre>';
-        // print_r($objOrganization);
-        // echo '</pre>';
-        // die; 
-        $content =  View::render('pages/home', [
+        $content =  View::render('pages/teste', [
             'name' => $objOrganization->name,
             'description' => $objOrganization->description,
             'site' => $objOrganization->site
         ]);
         //RETORNA A VIEW RENDERIZADA
-        return parent::getPage('HOME > Gabriel', $content);
+        return parent::getPage('Sobre > Gabriel', $content);
     }
 }
